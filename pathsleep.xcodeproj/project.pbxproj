@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530E935D14EFA67300C27BBD /* starShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 530E935B14EFA67300C27BBD /* starShader.fsh */; };
+		530E935E14EFA67300C27BBD /* starShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 530E935C14EFA67300C27BBD /* starShader.vsh */; };
 		53C5863614EF6A120097BE50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5863514EF6A120097BE50 /* UIKit.framework */; };
 		53C5863814EF6A120097BE50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5863714EF6A120097BE50 /* Foundation.framework */; };
 		53C5863A14EF6A120097BE50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5863914EF6A120097BE50 /* CoreGraphics.framework */; };
@@ -15,22 +17,122 @@
 		53C5864614EF6A120097BE50 /* HHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5864514EF6A120097BE50 /* HHAppDelegate.m */; };
 		53C5864914EF6A120097BE50 /* HHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5864814EF6A120097BE50 /* HHViewController.m */; };
 		53C5864C14EF6A120097BE50 /* HHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5864A14EF6A120097BE50 /* HHViewController.xib */; };
+		53C5865314EF6A6E0097BE50 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5865214EF6A6E0097BE50 /* OpenGLES.framework */; };
+		53C5865514EF6A880097BE50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C5865414EF6A880097BE50 /* QuartzCore.framework */; };
+		53C5865C14EF6AD80097BE50 /* ColorTrackingGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5865B14EF6AD80097BE50 /* ColorTrackingGLView.m */; };
+		53C5866214EF6BAE0097BE50 /* esShader.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C5865D14EF6BAE0097BE50 /* esShader.c */; };
+		53C5866314EF6BAE0097BE50 /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C5865E14EF6BAE0097BE50 /* esShapes.c */; };
+		53C5866414EF6BAE0097BE50 /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C5865F14EF6BAE0097BE50 /* esTransform.c */; };
+		53C5866514EF6BAE0097BE50 /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 53C5866014EF6BAE0097BE50 /* esUtil.c */; };
+		53C5869A14EF6DAD0097BE50 /* pathSleepController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C5869814EF6DAD0097BE50 /* pathSleepController.m */; };
+		53C5869B14EF6DAD0097BE50 /* pathSleepController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C5869914EF6DAD0097BE50 /* pathSleepController.xib */; };
+		53C586C614EF78B40097BE50 /* sleep-awake-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B014EF78B40097BE50 /* sleep-awake-button.png */; };
+		53C586C714EF78B40097BE50 /* sleep-awake-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B114EF78B40097BE50 /* sleep-awake-button@2x.png */; };
+		53C586C814EF78B40097BE50 /* sleep-gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B214EF78B40097BE50 /* sleep-gradient.png */; };
+		53C586C914EF78B40097BE50 /* sleep-gradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B314EF78B40097BE50 /* sleep-gradient@2x.png */; };
+		53C586CA14EF78B40097BE50 /* sleep-moon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B414EF78B40097BE50 /* sleep-moon1.png */; };
+		53C586CB14EF78B40097BE50 /* sleep-moon1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B514EF78B40097BE50 /* sleep-moon1@2x.png */; };
+		53C586CC14EF78B40097BE50 /* sleep-moon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B614EF78B40097BE50 /* sleep-moon2.png */; };
+		53C586CD14EF78B40097BE50 /* sleep-moon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B714EF78B40097BE50 /* sleep-moon2@2x.png */; };
+		53C586CE14EF78B40097BE50 /* sleep-moon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B814EF78B40097BE50 /* sleep-moon3.png */; };
+		53C586CF14EF78B40097BE50 /* sleep-moon3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586B914EF78B40097BE50 /* sleep-moon3@2x.png */; };
+		53C586D014EF78B40097BE50 /* sleep-moon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586BA14EF78B40097BE50 /* sleep-moon4.png */; };
+		53C586D114EF78B40097BE50 /* sleep-moon4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586BB14EF78B40097BE50 /* sleep-moon4@2x.png */; };
+		53C586D214EF78B40097BE50 /* sleep-moon5.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586BC14EF78B40097BE50 /* sleep-moon5.png */; };
+		53C586D314EF78B40097BE50 /* sleep-moon5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586BD14EF78B40097BE50 /* sleep-moon5@2x.png */; };
+		53C586D414EF78B40097BE50 /* sleep-moon6.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586BE14EF78B40097BE50 /* sleep-moon6.png */; };
+		53C586D514EF78B40097BE50 /* sleep-moon6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586BF14EF78B40097BE50 /* sleep-moon6@2x.png */; };
+		53C586D614EF78B40097BE50 /* sleep-moon7.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586C014EF78B40097BE50 /* sleep-moon7.png */; };
+		53C586D714EF78B40097BE50 /* sleep-moon7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586C114EF78B40097BE50 /* sleep-moon7@2x.png */; };
+		53C586D814EF78B40097BE50 /* sleep-moon8.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586C214EF78B40097BE50 /* sleep-moon8.png */; };
+		53C586D914EF78B40097BE50 /* sleep-moon8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586C314EF78B40097BE50 /* sleep-moon8@2x.png */; };
+		53C586DA14EF78B40097BE50 /* sleep-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586C414EF78B40097BE50 /* sleep-stars.png */; };
+		53C586DB14EF78B40097BE50 /* sleep-stars@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C586C514EF78B40097BE50 /* sleep-stars@2x.png */; };
+		53C586E214EF79B30097BE50 /* DirectDisplayShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 53C586E014EF79B30097BE50 /* DirectDisplayShader.fsh */; };
+		53C586E314EF79B30097BE50 /* DirectDisplayShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 53C586E114EF79B30097BE50 /* DirectDisplayShader.vsh */; };
+		53C586EA14EF8C330097BE50 /* moonShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 53C586E814EF8C320097BE50 /* moonShader.fsh */; };
+		53C586EB14EF8C330097BE50 /* moonShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 53C586E914EF8C320097BE50 /* moonShader.vsh */; };
+		53E8C3E6152FD8E400993E99 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E8C3DB152FD8E400993E99 /* NSObject+SBJSON.m */; };
+		53E8C3E7152FD8E400993E99 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E8C3DD152FD8E400993E99 /* NSString+SBJSON.m */; };
+		53E8C3E8152FD8E400993E99 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E8C3DF152FD8E400993E99 /* SBJSON.m */; };
+		53E8C3E9152FD8E400993E99 /* request-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E8C3E1152FD8E400993E99 /* request-close.png */; };
+		53E8C3EA152FD8E400993E99 /* request-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53E8C3E2152FD8E400993E99 /* request-close@2x.png */; };
+		53E8C3EB152FD8E400993E99 /* libWiAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E8C3E5152FD8E400993E99 /* libWiAd.a */; };
+		53E8C3F4152FD91700993E99 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E8C3F1152FD91700993E99 /* SystemConfiguration.framework */; };
+		53E8C3F5152FD91700993E99 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E8C3F2152FD91700993E99 /* ImageIO.framework */; };
+		53E8C3F6152FD91700993E99 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E8C3F3152FD91700993E99 /* MediaPlayer.framework */; };
+		53EF12A114F0A49A00897F74 /* xueye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 53EF12A014F0A49A00897F74 /* xueye.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530E935B14EFA67300C27BBD /* starShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = starShader.fsh; sourceTree = "<group>"; };
+		530E935C14EFA67300C27BBD /* starShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = starShader.vsh; sourceTree = "<group>"; };
 		53C5863114EF6A120097BE50 /* pathsleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pathsleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C5863514EF6A120097BE50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53C5863714EF6A120097BE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53C5863914EF6A120097BE50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		53C5863D14EF6A120097BE50 /* pathsleep-Info.plist */ = {isa = PBXFileReference; path = "pathsleep-Info.plist"; sourceTree = "<group>"; };
+		53C5863D14EF6A120097BE50 /* pathsleep-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pathsleep-Info.plist"; sourceTree = "<group>"; };
 		53C5863F14EF6A120097BE50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53C5864114EF6A120097BE50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		53C5864314EF6A120097BE50 /* pathsleep-Prefix.pch */ = {isa = PBXFileReference; path = "pathsleep-Prefix.pch"; sourceTree = "<group>"; };
-		53C5864414EF6A120097BE50 /* HHAppDelegate.h */ = {isa = PBXFileReference; path = HHAppDelegate.h; sourceTree = "<group>"; };
+		53C5864314EF6A120097BE50 /* pathsleep-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pathsleep-Prefix.pch"; sourceTree = "<group>"; };
+		53C5864414EF6A120097BE50 /* HHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAppDelegate.h; sourceTree = "<group>"; };
 		53C5864514EF6A120097BE50 /* HHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAppDelegate.m; sourceTree = "<group>"; };
-		53C5864714EF6A120097BE50 /* HHViewController.h */ = {isa = PBXFileReference; path = HHViewController.h; sourceTree = "<group>"; };
+		53C5864714EF6A120097BE50 /* HHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHViewController.h; sourceTree = "<group>"; };
 		53C5864814EF6A120097BE50 /* HHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHViewController.m; sourceTree = "<group>"; };
 		53C5864B14EF6A120097BE50 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HHViewController.xib; sourceTree = "<group>"; };
+		53C5865214EF6A6E0097BE50 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		53C5865414EF6A880097BE50 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		53C5865A14EF6AD80097BE50 /* ColorTrackingGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTrackingGLView.h; sourceTree = "<group>"; };
+		53C5865B14EF6AD80097BE50 /* ColorTrackingGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTrackingGLView.m; sourceTree = "<group>"; };
+		53C5865D14EF6BAE0097BE50 /* esShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShader.c; sourceTree = "<group>"; };
+		53C5865E14EF6BAE0097BE50 /* esShapes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShapes.c; sourceTree = "<group>"; };
+		53C5865F14EF6BAE0097BE50 /* esTransform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esTransform.c; sourceTree = "<group>"; };
+		53C5866014EF6BAE0097BE50 /* esUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esUtil.c; sourceTree = "<group>"; };
+		53C5866114EF6BAE0097BE50 /* esUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil.h; sourceTree = "<group>"; };
+		53C5869714EF6DAD0097BE50 /* pathSleepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pathSleepController.h; sourceTree = "<group>"; };
+		53C5869814EF6DAD0097BE50 /* pathSleepController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pathSleepController.m; sourceTree = "<group>"; };
+		53C5869914EF6DAD0097BE50 /* pathSleepController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pathSleepController.xib; sourceTree = "<group>"; };
+		53C586B014EF78B40097BE50 /* sleep-awake-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-awake-button.png"; sourceTree = "<group>"; };
+		53C586B114EF78B40097BE50 /* sleep-awake-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-awake-button@2x.png"; sourceTree = "<group>"; };
+		53C586B214EF78B40097BE50 /* sleep-gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-gradient.png"; sourceTree = "<group>"; };
+		53C586B314EF78B40097BE50 /* sleep-gradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-gradient@2x.png"; sourceTree = "<group>"; };
+		53C586B414EF78B40097BE50 /* sleep-moon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon1.png"; sourceTree = "<group>"; };
+		53C586B514EF78B40097BE50 /* sleep-moon1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon1@2x.png"; sourceTree = "<group>"; };
+		53C586B614EF78B40097BE50 /* sleep-moon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon2.png"; sourceTree = "<group>"; };
+		53C586B714EF78B40097BE50 /* sleep-moon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon2@2x.png"; sourceTree = "<group>"; };
+		53C586B814EF78B40097BE50 /* sleep-moon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon3.png"; sourceTree = "<group>"; };
+		53C586B914EF78B40097BE50 /* sleep-moon3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon3@2x.png"; sourceTree = "<group>"; };
+		53C586BA14EF78B40097BE50 /* sleep-moon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon4.png"; sourceTree = "<group>"; };
+		53C586BB14EF78B40097BE50 /* sleep-moon4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon4@2x.png"; sourceTree = "<group>"; };
+		53C586BC14EF78B40097BE50 /* sleep-moon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon5.png"; sourceTree = "<group>"; };
+		53C586BD14EF78B40097BE50 /* sleep-moon5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon5@2x.png"; sourceTree = "<group>"; };
+		53C586BE14EF78B40097BE50 /* sleep-moon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon6.png"; sourceTree = "<group>"; };
+		53C586BF14EF78B40097BE50 /* sleep-moon6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon6@2x.png"; sourceTree = "<group>"; };
+		53C586C014EF78B40097BE50 /* sleep-moon7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon7.png"; sourceTree = "<group>"; };
+		53C586C114EF78B40097BE50 /* sleep-moon7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon7@2x.png"; sourceTree = "<group>"; };
+		53C586C214EF78B40097BE50 /* sleep-moon8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon8.png"; sourceTree = "<group>"; };
+		53C586C314EF78B40097BE50 /* sleep-moon8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-moon8@2x.png"; sourceTree = "<group>"; };
+		53C586C414EF78B40097BE50 /* sleep-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-stars.png"; sourceTree = "<group>"; };
+		53C586C514EF78B40097BE50 /* sleep-stars@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep-stars@2x.png"; sourceTree = "<group>"; };
+		53C586E014EF79B30097BE50 /* DirectDisplayShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectDisplayShader.fsh; sourceTree = "<group>"; };
+		53C586E114EF79B30097BE50 /* DirectDisplayShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DirectDisplayShader.vsh; sourceTree = "<group>"; };
+		53C586E814EF8C320097BE50 /* moonShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = moonShader.fsh; sourceTree = "<group>"; };
+		53C586E914EF8C320097BE50 /* moonShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = moonShader.vsh; sourceTree = "<group>"; };
+		53E8C3D9152FD8E400993E99 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		53E8C3DA152FD8E400993E99 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		53E8C3DB152FD8E400993E99 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		53E8C3DC152FD8E400993E99 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		53E8C3DD152FD8E400993E99 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		53E8C3DE152FD8E400993E99 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		53E8C3DF152FD8E400993E99 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		53E8C3E1152FD8E400993E99 /* request-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request-close.png"; sourceTree = "<group>"; };
+		53E8C3E2152FD8E400993E99 /* request-close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "request-close@2x.png"; sourceTree = "<group>"; };
+		53E8C3E3152FD8E400993E99 /* WiAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiAdView.h; sourceTree = "<group>"; };
+		53E8C3E5152FD8E400993E99 /* libWiAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWiAd.a; sourceTree = "<group>"; };
+		53E8C3F1152FD91700993E99 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		53E8C3F2152FD91700993E99 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		53E8C3F3152FD91700993E99 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		53EF12A014F0A49A00897F74 /* xueye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = xueye.jpg; path = ../../here007/taimei/ios/demo/ColorTracking/xueye.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,9 +140,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C5865514EF6A880097BE50 /* QuartzCore.framework in Frameworks */,
+				53C5865314EF6A6E0097BE50 /* OpenGLES.framework in Frameworks */,
 				53C5863614EF6A120097BE50 /* UIKit.framework in Frameworks */,
 				53C5863814EF6A120097BE50 /* Foundation.framework in Frameworks */,
 				53C5863A14EF6A120097BE50 /* CoreGraphics.framework in Frameworks */,
+				53E8C3EB152FD8E400993E99 /* libWiAd.a in Frameworks */,
+				53E8C3F4152FD91700993E99 /* SystemConfiguration.framework in Frameworks */,
+				53E8C3F5152FD91700993E99 /* ImageIO.framework in Frameworks */,
+				53E8C3F6152FD91700993E99 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +158,8 @@
 		53C5862614EF6A120097BE50 = {
 			isa = PBXGroup;
 			children = (
+				53E8C3D6152FD8E300993E99 /* sdk */,
+				53C586AF14EF78B40097BE50 /* Resources */,
 				53C5863B14EF6A120097BE50 /* pathsleep */,
 				53C5863414EF6A120097BE50 /* Frameworks */,
 				53C5863214EF6A120097BE50 /* Products */,
@@ -67,6 +177,11 @@
 		53C5863414EF6A120097BE50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53E8C3F1152FD91700993E99 /* SystemConfiguration.framework */,
+				53E8C3F2152FD91700993E99 /* ImageIO.framework */,
+				53E8C3F3152FD91700993E99 /* MediaPlayer.framework */,
+				53C5865414EF6A880097BE50 /* QuartzCore.framework */,
+				53C5865214EF6A6E0097BE50 /* OpenGLES.framework */,
 				53C5863514EF6A120097BE50 /* UIKit.framework */,
 				53C5863714EF6A120097BE50 /* Foundation.framework */,
 				53C5863914EF6A120097BE50 /* CoreGraphics.framework */,
@@ -82,6 +197,16 @@
 				53C5864714EF6A120097BE50 /* HHViewController.h */,
 				53C5864814EF6A120097BE50 /* HHViewController.m */,
 				53C5864A14EF6A120097BE50 /* HHViewController.xib */,
+				53C5869714EF6DAD0097BE50 /* pathSleepController.h */,
+				53C5869814EF6DAD0097BE50 /* pathSleepController.m */,
+				53C5869914EF6DAD0097BE50 /* pathSleepController.xib */,
+				53C5865A14EF6AD80097BE50 /* ColorTrackingGLView.h */,
+				53C5865B14EF6AD80097BE50 /* ColorTrackingGLView.m */,
+				53C5865D14EF6BAE0097BE50 /* esShader.c */,
+				53C5865E14EF6BAE0097BE50 /* esShapes.c */,
+				53C5865F14EF6BAE0097BE50 /* esTransform.c */,
+				53C5866014EF6BAE0097BE50 /* esUtil.c */,
+				53C5866114EF6BAE0097BE50 /* esUtil.h */,
 				53C5863C14EF6A120097BE50 /* Supporting Files */,
 			);
 			path = pathsleep;
@@ -96,6 +221,92 @@
 				53C5864314EF6A120097BE50 /* pathsleep-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53C586AF14EF78B40097BE50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				530E935B14EFA67300C27BBD /* starShader.fsh */,
+				530E935C14EFA67300C27BBD /* starShader.vsh */,
+				53C586E814EF8C320097BE50 /* moonShader.fsh */,
+				53C586E914EF8C320097BE50 /* moonShader.vsh */,
+				53C586E014EF79B30097BE50 /* DirectDisplayShader.fsh */,
+				53C586E114EF79B30097BE50 /* DirectDisplayShader.vsh */,
+				53EF12A014F0A49A00897F74 /* xueye.jpg */,
+				53C586B014EF78B40097BE50 /* sleep-awake-button.png */,
+				53C586B114EF78B40097BE50 /* sleep-awake-button@2x.png */,
+				53C586B214EF78B40097BE50 /* sleep-gradient.png */,
+				53C586B314EF78B40097BE50 /* sleep-gradient@2x.png */,
+				53C586B414EF78B40097BE50 /* sleep-moon1.png */,
+				53C586B514EF78B40097BE50 /* sleep-moon1@2x.png */,
+				53C586B614EF78B40097BE50 /* sleep-moon2.png */,
+				53C586B714EF78B40097BE50 /* sleep-moon2@2x.png */,
+				53C586B814EF78B40097BE50 /* sleep-moon3.png */,
+				53C586B914EF78B40097BE50 /* sleep-moon3@2x.png */,
+				53C586BA14EF78B40097BE50 /* sleep-moon4.png */,
+				53C586BB14EF78B40097BE50 /* sleep-moon4@2x.png */,
+				53C586BC14EF78B40097BE50 /* sleep-moon5.png */,
+				53C586BD14EF78B40097BE50 /* sleep-moon5@2x.png */,
+				53C586BE14EF78B40097BE50 /* sleep-moon6.png */,
+				53C586BF14EF78B40097BE50 /* sleep-moon6@2x.png */,
+				53C586C014EF78B40097BE50 /* sleep-moon7.png */,
+				53C586C114EF78B40097BE50 /* sleep-moon7@2x.png */,
+				53C586C214EF78B40097BE50 /* sleep-moon8.png */,
+				53C586C314EF78B40097BE50 /* sleep-moon8@2x.png */,
+				53C586C414EF78B40097BE50 /* sleep-stars.png */,
+				53C586C514EF78B40097BE50 /* sleep-stars@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53E8C3D6152FD8E300993E99 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				53E8C3D7152FD8E300993E99 /* external */,
+				53E8C3E0152FD8E400993E99 /* inc */,
+				53E8C3E4152FD8E400993E99 /* lib */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		53E8C3D7152FD8E300993E99 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				53E8C3D8152FD8E300993E99 /* json */,
+			);
+			path = external;
+			sourceTree = "<group>";
+		};
+		53E8C3D8152FD8E300993E99 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				53E8C3D9152FD8E400993E99 /* JSON.h */,
+				53E8C3DA152FD8E400993E99 /* NSObject+SBJSON.h */,
+				53E8C3DB152FD8E400993E99 /* NSObject+SBJSON.m */,
+				53E8C3DC152FD8E400993E99 /* NSString+SBJSON.h */,
+				53E8C3DD152FD8E400993E99 /* NSString+SBJSON.m */,
+				53E8C3DE152FD8E400993E99 /* SBJSON.h */,
+				53E8C3DF152FD8E400993E99 /* SBJSON.m */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		53E8C3E0152FD8E400993E99 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				53E8C3E1152FD8E400993E99 /* request-close.png */,
+				53E8C3E2152FD8E400993E99 /* request-close@2x.png */,
+				53E8C3E3152FD8E400993E99 /* WiAdView.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		53E8C3E4152FD8E400993E99 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				53E8C3E5152FD8E400993E99 /* libWiAd.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +360,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530E935D14EFA67300C27BBD /* starShader.fsh in Resources */,
+				530E935E14EFA67300C27BBD /* starShader.vsh in Resources */,
+				53C586EA14EF8C330097BE50 /* moonShader.fsh in Resources */,
+				53C586EB14EF8C330097BE50 /* moonShader.vsh in Resources */,
+				53C586E214EF79B30097BE50 /* DirectDisplayShader.fsh in Resources */,
+				53C586E314EF79B30097BE50 /* DirectDisplayShader.vsh in Resources */,
 				53C5864014EF6A120097BE50 /* InfoPlist.strings in Resources */,
 				53C5864C14EF6A120097BE50 /* HHViewController.xib in Resources */,
+				53C5869B14EF6DAD0097BE50 /* pathSleepController.xib in Resources */,
+				53C586C614EF78B40097BE50 /* sleep-awake-button.png in Resources */,
+				53C586C714EF78B40097BE50 /* sleep-awake-button@2x.png in Resources */,
+				53C586C814EF78B40097BE50 /* sleep-gradient.png in Resources */,
+				53C586C914EF78B40097BE50 /* sleep-gradient@2x.png in Resources */,
+				53C586CA14EF78B40097BE50 /* sleep-moon1.png in Resources */,
+				53C586CB14EF78B40097BE50 /* sleep-moon1@2x.png in Resources */,
+				53C586CC14EF78B40097BE50 /* sleep-moon2.png in Resources */,
+				53C586CD14EF78B40097BE50 /* sleep-moon2@2x.png in Resources */,
+				53C586CE14EF78B40097BE50 /* sleep-moon3.png in Resources */,
+				53C586CF14EF78B40097BE50 /* sleep-moon3@2x.png in Resources */,
+				53C586D014EF78B40097BE50 /* sleep-moon4.png in Resources */,
+				53C586D114EF78B40097BE50 /* sleep-moon4@2x.png in Resources */,
+				53C586D214EF78B40097BE50 /* sleep-moon5.png in Resources */,
+				53C586D314EF78B40097BE50 /* sleep-moon5@2x.png in Resources */,
+				53C586D414EF78B40097BE50 /* sleep-moon6.png in Resources */,
+				53C586D514EF78B40097BE50 /* sleep-moon6@2x.png in Resources */,
+				53C586D614EF78B40097BE50 /* sleep-moon7.png in Resources */,
+				53C586D714EF78B40097BE50 /* sleep-moon7@2x.png in Resources */,
+				53C586D814EF78B40097BE50 /* sleep-moon8.png in Resources */,
+				53C586D914EF78B40097BE50 /* sleep-moon8@2x.png in Resources */,
+				53C586DA14EF78B40097BE50 /* sleep-stars.png in Resources */,
+				53C586DB14EF78B40097BE50 /* sleep-stars@2x.png in Resources */,
+				53EF12A114F0A49A00897F74 /* xueye.jpg in Resources */,
+				53E8C3E9152FD8E400993E99 /* request-close.png in Resources */,
+				53E8C3EA152FD8E400993E99 /* request-close@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +407,15 @@
 				53C5864214EF6A120097BE50 /* main.m in Sources */,
 				53C5864614EF6A120097BE50 /* HHAppDelegate.m in Sources */,
 				53C5864914EF6A120097BE50 /* HHViewController.m in Sources */,
+				53C5865C14EF6AD80097BE50 /* ColorTrackingGLView.m in Sources */,
+				53C5866214EF6BAE0097BE50 /* esShader.c in Sources */,
+				53C5866314EF6BAE0097BE50 /* esShapes.c in Sources */,
+				53C5866414EF6BAE0097BE50 /* esTransform.c in Sources */,
+				53C5866514EF6BAE0097BE50 /* esUtil.c in Sources */,
+				53C5869A14EF6DAD0097BE50 /* pathSleepController.m in Sources */,
+				53E8C3E6152FD8E400993E99 /* NSObject+SBJSON.m in Sources */,
+				53E8C3E7152FD8E400993E99 /* NSString+SBJSON.m in Sources */,
+				53E8C3E8152FD8E400993E99 /* SBJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +490,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pathsleep/pathsleep-Prefix.pch";
 				INFOPLIST_FILE = "pathsleep/pathsleep-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/sdk/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -249,6 +509,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pathsleep/pathsleep-Prefix.pch";
 				INFOPLIST_FILE = "pathsleep/pathsleep-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/sdk/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,6 +541,7 @@
 				53C5865114EF6A120097BE50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

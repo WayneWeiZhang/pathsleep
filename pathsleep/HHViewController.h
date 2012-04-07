@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface HHViewController : UIViewController
-
+{
+    
+}
+- (IBAction)gosleep:(id)sender;
 @end
